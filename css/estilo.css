@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
+    text-decoration: none;
+}
+
+header {
+    background-color: rgb(0, 184, 197);
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0;
+}
+
+header #logo {
+    height: 55px;
+    align-items: center;
+}
+
+.links-header a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.links-header a:hover {
+    cursor: pointer;
+    color: black;
+}
+
+main {
+    color: #0000008c;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    background-image: url('../assets/recepcao.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 500px;
+    width: 100%;
+}
+
+.box-titulo {
+    width: 1024px;
+    color: white;
+    font-size: 25px;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: start;
+}
+
+#sobre #especialidades #contato .sobre, div {
+    display: flex;
+    max-width: 1024px;
+    margin: 20px 10px;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre, .container-ul {
+    flex-direction: column;
+}
+
+.conteudo-especialidades h2 {
+    margin-bottom: 20px;
+}
+
+.figures {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+figure {
+    border-radius: 3px;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 50%);
+    margin: 12px;
+}
+
+figcaption {
+    padding: 8px;
+}
+
+button {
+    background-color: rgb(0, 184, 197);
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 15px;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button a {
+    color: #fff;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+footer, .contato, .conteudo-footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-right: 10px;
+}
+
+footer {
+    background-color: rgb(0, 184, 197);
+}
+
+.logo-footer {
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.conteudo-footer {
+    color: #fff;
+    margin-top: 35px;
+}
+
+@media (max-width: 1024px) {
+    #home { 
+        height: 400px;
+    }
+    .header {
+        padding: 0 10px;
+    }
+    .container-mapa iframe {
+        width: 100%;
+        margin: 0 10px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+    #home { 
+        height: 300px;
+    }
+    .img-medico img {
+        display: none;
+    }
+    figure {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .header {
+        flex-direction: column;
+    }
+    .links-header {
+        border-top: 1px solid #0000008c; /* Estilo da linha */
+        padding: 10px 0;
+    }
+    #home {
+        height: 200px;
+    }
+    .box-titulo {
+        font-size: 20px;
+    }
+    #sobre, .conteudo-especialidades {
+        align-items: center;
+    }
+        .img-medico img {
+        display: none;
+    }
+}
