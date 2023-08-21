@@ -4,6 +4,10 @@
     font-family: "Source Sans Pro", sans-serif;
 }
 
+html, body {
+    scroll-behavior: smooth;
+}
+
 header {
     background-color: rgb(0, 184, 197);
     display: flex;
