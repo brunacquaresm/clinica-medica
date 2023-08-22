@@ -84,6 +84,10 @@ main {
     flex-direction: column;
 }
 
+ul { 
+    text-align: left; 
+}
+
 .conteudo-especialidades h2 {
     margin-bottom: 20px;
 }
